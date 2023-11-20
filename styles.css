@@ -828,6 +828,7 @@ a:hover::before {
     .project {
         width: 450px;
         height: 300px;  
+        margin: 10px 0px 10px 50px;
     }
 
     .languages h2 {
@@ -971,7 +972,33 @@ a:hover::before {
 }
 
 /* zoom 150 ++ */
+@media only screen and (max-width: 600px){
+    .entry {
+        width: 200px;
+        height: 250px;
+        padding-left: 15px;
+    }
 
+    h1 {
+        font-size: 28px;
+        padding: 20px 0px 20px 70px;
+    }
+
+    .core li {
+        font-size: 12px;
+        width: 200px;
+    }
+    .entry span {
+        font-size: 14px;
+    }
+    .entry h3 img {
+        margin-left: 30px;
+    }
+
+    .entry h3{
+        font-size: 18px;
+    }
+}
 @media only screen and (min-width: 400px) and (max-width: 610px){
 
     .container {
@@ -1084,7 +1111,7 @@ a:hover::before {
         font-size: 14px;
     }
     .project{
-        width: 250px;
+        width: 270px;
         height: 225px;
         margin: 10px 0px 10px 10px;
     }
@@ -1101,8 +1128,8 @@ a:hover::before {
         font-size: 12px;
     }
 
-    .project-inside p{
-        font-size: 9px;
+    .project-inside p {
+        font-size: 10px;
         height: 95px;
     }
 }
