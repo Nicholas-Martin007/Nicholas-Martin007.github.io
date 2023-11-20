@@ -92,9 +92,9 @@ h1 {
 /* ----------------------------------------------- */
 
 #home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     
     height: 100vh;
 }
@@ -102,34 +102,48 @@ h1 {
 
 .whoami {
     margin-left: 100px;
-    padding: 100px 0px 100px 30px;
-    flex: 6;
-    font-size: 32px;
+    margin-top: 50px;
+    padding: 100px 50px 0px 30px;
+    font-size: 36px;
     height: 500px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
+.whoami span{
+    font-size: 50px;
+}
 .whoami p {
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     padding-left: 30px;
     line-height: 1.5;
+    padding-right: 50px;
+}
+
+.whoami b {
+    font-size:55px;
 }
 
 #space-contact {
-    margin-bottom: 50px;
+    font-size: 45px;
 }
 
 #profile-picture {
-    flex: 3;
     overflow: hidden;
+    margin-right: 50px;
 }
 
 #profile-picture img {
-    border-radius: 15%;
+    border-radius: 10%;
     border: 5px solid rgb(5, 61, 56);
-    width: 520px;
+    width: 800px;
     height: 640px;
     max-width: 100%;
     height: auto;
+    box-shadow: 5px 5px 2px rgba(151, 151, 151, 0.226);
 }
 
 u {
@@ -137,8 +151,8 @@ u {
 }
 
 .whoami p a svg {
-    height: 2em; /* Adjust the height as needed */
-    width: 2em; /* Adjust the width as needed */
+    height: 2em;
+    width: 2em;
     max-width: 100%;
 }
 
@@ -147,7 +161,7 @@ u {
 .about {
     flex: 6;
     padding: 50px 90px 50px 150px;
-    font-size: 24px;
+    font-size: 28px;
     overflow: visible;
     overflow-wrap: anywhere;
     margin-left: 70px;
@@ -167,7 +181,7 @@ u {
 
 .about strong {
     display: inline-block;
-    width: 130px;
+    width: 180px;
     max-width: 100%;
 }
 
@@ -364,6 +378,7 @@ u {
     overflow: hidden;
     box-shadow: 10px 10px rgb(0, 160, 147);
     height: 300px;
+    object-fit: cover;
 }
 
 
@@ -433,6 +448,7 @@ u {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -558,6 +574,7 @@ u {
     height: 100px;
     max-width: 100%;
     display: block;
+    margin-bottom: 20px;
 }
 
 
@@ -623,6 +640,7 @@ a:hover::before {
 
     .container img {
         width: 60px;
+        height: 60px;
     }
     
     .languages {
@@ -644,9 +662,14 @@ a:hover::before {
         font-size: 28px;
     }
 
+    #profile-picture img {
+        width: 700px;        
+    }
+
     .whoami {
         font-size: 20px;
-        padding: 100px 20px 100px 10px;
+        padding: 80px 20px 100px 10px;
+        margin-top: 20px;
     }
 
     .about {
@@ -707,7 +730,11 @@ a:hover::before {
     nav:hover{
         width: 180px;
     }
-}
+
+    .projects-container {
+        margin-left: 70px;
+    }
+} 
 
 @media only screen and (max-width: 1200px){
 
@@ -739,6 +766,7 @@ a:hover::before {
 
 }
 
+/* 
 
 /* split screen */
 
@@ -746,6 +774,10 @@ a:hover::before {
     h1 {
         font-size: 35px;
         padding: 30px 0px 30px 120px;
+    }
+
+    #profile-picture img {
+        width: 200px;
     }
 
     .contact-button {
@@ -767,12 +799,31 @@ a:hover::before {
         height: 300px;  
     }
 
+    .languages h2 {
+        font-size: 25px;
+    }
     .container img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     .container li {
-        font-size: 14px;
+        font-size: 12px;
+        display: grid;
+        margin-right: 10px;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    .about strong{
+        width: 75px;
+    }
+    .about li {
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .project img {
@@ -798,7 +849,7 @@ a:hover::before {
     }
 
     .about {
-        padding: 50px 40px 50px 80px;
+        padding: 50px 25px 50px 80px;
         font-size: 14px;
         margin-left: 10px;
         margin-right: 10px;
@@ -832,7 +883,7 @@ a:hover::before {
 
     .entry{
         width:210px;
-        height: 200px;
+        height: 250px;
         padding-left: 20px;
     }
     .entry h3 img {
@@ -842,18 +893,51 @@ a:hover::before {
 
     .entry h3 {
         margin: 0px;
+        margin-bottom: 20px;
         font-size: 18px;
     }
 
     .core li {
-        font-size: 7px;
+        font-size: 12px;
+        width: 150px;
     }
     .whoami p {
-        font-size: 20px;
+        font-size: 16px;
+        padding-right: 10px;
     }
+
+    .whoami span {
+        font-size: 30px;
+        display: block;
+    }
+
+    .whoami b {
+        display: block;
+        font-size: 30px;
+    }
+
+    .whoami {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-top: 20px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #home {
+        height: auto;
+    }
+
+    .contact-section a {
+        padding: 10px 0px;
+    }
+
 }
 
 /* zoom 150 ++ */
+
 @media only screen and (min-width: 400px) and (max-width: 610px){
 
     h1 {
@@ -884,7 +968,6 @@ a:hover::before {
 
     .project-inside p {
         padding-top: 10px;
-        font-size: 18px;
         height: 100px;
     }
     .project-inside h2 {
@@ -897,7 +980,7 @@ a:hover::before {
     
     
     .project-inside p {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .whoami {
@@ -927,6 +1010,11 @@ a:hover::before {
 
     .experiences h2 p {
         font-size: 16px;
+    }
+
+    .project-inside {
+
+        padding-left: 20px;
     }
 
 }
@@ -963,9 +1051,66 @@ a:hover::before {
     }
 
     .project-inside p{
-        font-size: 7px;
-        height: 70px;
+        font-size: 9px;
+        height: 95px;
     }
 }
 
+@media only screen and (max-width: 299px){
 
+    .project-inside {
+        padding: 15px;
+    }
+    .project-inside h2{
+        font-size: 10px;
+    }
+    .project {    
+        width: 180px;
+    }
+
+    .project-inside p {
+        font-size: 7px;
+    }
+
+    .languages {
+        margin: 20px 20px 20px 60px;
+    }
+
+    .entry {
+        width: 140px;
+        height: 220px;
+    }
+
+    .core::before {
+        left: -24%;
+    }
+
+    .core li {
+        font-size: 10px;
+        width: 90px;
+    }
+
+    .entry h3 img {
+        margin-left: 12px;
+    }
+
+    .entry h3 {
+        font-size: 12px;
+    }
+
+    h1 {
+        padding-left: 70px;
+        font-size: 30px;
+    }
+
+    .contact-section a p{
+        font-size: 10px;
+    }
+
+    .contact-button {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+}
