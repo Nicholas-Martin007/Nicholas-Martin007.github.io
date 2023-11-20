@@ -177,7 +177,9 @@ u {
 }
 
 .about p {
+    text-align: justify;
     line-height: 1.5;
+    font-size: 28px;
 }
 
 .about strong {
@@ -188,6 +190,12 @@ u {
 
 .about li {
     display: flex;
+    font-size: 28px;
+}
+
+.entry span {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 
@@ -256,7 +264,7 @@ u {
 .entry:before{
     content:"";
     position:absolute;
-    width:3px;height:200%;
+    width:3px;height:180%;
     display:block;
     border-radius:0px;
     border:2px solid rgb(5, 81, 87);
@@ -622,6 +630,14 @@ a:hover::before {
 
 /* zoom 125 ++ */
 @media only screen and (max-width: 1400px) {
+
+    .about p {
+        font-size: 24px;
+    }
+
+    .about li {
+        font-size: 24px;
+    }
     
     h1 {
         font-size: 45px;
@@ -640,8 +656,8 @@ a:hover::before {
     }
 
     .container img {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
     
     .languages {
@@ -697,10 +713,16 @@ a:hover::before {
     }
     
     .entry {
-        width: 480px;
-        height: 270px;
+        width: 520px;
+        height: 300px;
     }
-
+    #home {
+        height: auto;
+    }
+    .whoami {
+        margin-bottom: 20px;
+        height: auto;
+    }
     .entry h3 img {
         margin-left: 220px;
     }
@@ -772,6 +794,15 @@ a:hover::before {
 /* split screen */
 
 @media only screen and (max-width: 900px){
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .about li {
+        font-size: 16px;
+    }
+
     h1 {
         font-size: 35px;
         padding: 30px 0px 30px 120px;
@@ -804,11 +835,11 @@ a:hover::before {
         font-size: 25px;
     }
     .container img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .container li {
-        font-size: 12px;
+        font-size: 18px;
         display: grid;
         margin-right: 10px;
         padding-bottom: 20px;
@@ -816,7 +847,7 @@ a:hover::before {
     }
 
     .about strong{
-        width: 75px;
+        width: 110px;
     }
     .about li {
         display: block;
@@ -883,24 +914,27 @@ a:hover::before {
     }
 
     .entry{
-        width:210px;
+        width:300px;
         height: 250px;
         padding-left: 20px;
     }
     .entry h3 img {
-        margin-left: 40px;
-        width: 40px;
+        margin-left: 100px;
+        width: 50px;
     }
 
     .entry h3 {
         margin: 0px;
         margin-bottom: 20px;
+        font-size: 24px;
+    }
+    
+    .entry span {
         font-size: 18px;
     }
-
     .core li {
-        font-size: 12px;
-        width: 150px;
+        font-size: 15px;
+        width: 226px;
     }
     .whoami p {
         font-size: 16px;
@@ -1037,6 +1071,8 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 399px){
+
+
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
