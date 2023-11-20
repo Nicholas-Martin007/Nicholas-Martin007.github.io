@@ -1131,7 +1131,7 @@ a:hover::before {
     }
 
     .project-inside p {
-        font-size: 10px;
+        font-size: 9px;
         height: 95px;
     }
 }
