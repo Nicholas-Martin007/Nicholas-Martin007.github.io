@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 0rem);
+    overflow-x: hidden;
 }
 
 * {
@@ -823,7 +824,7 @@ a:hover::before {
 
     .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .project img {
@@ -940,6 +941,10 @@ a:hover::before {
 
 @media only screen and (min-width: 400px) and (max-width: 610px){
 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     h1 {
         font-size: 20px;
         padding: 30px 0px 30px 80px;
@@ -1032,6 +1037,10 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 399px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .project{
         width: 250px;
         height: 225px;
