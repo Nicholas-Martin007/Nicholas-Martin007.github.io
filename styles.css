@@ -386,7 +386,7 @@ u {
     max-width: 100%;
     overflow: hidden;
     box-shadow: 10px 10px rgb(0, 160, 147);
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -860,7 +860,7 @@ a:hover::before {
     }
 
     .project img {
-        height: 260px;
+        height: 100%;
     }
 
     .project-inside h2 {
@@ -1039,7 +1039,7 @@ a:hover::before {
         left: -22.7%;
     }
     .project img {
-        height: 250px;
+        height: 100%;
     }
 
     .project-inside p {
@@ -1120,7 +1120,7 @@ a:hover::before {
     }
 
     .project img {
-        height: 360px;
+        height: 100%;
     }
 
 }
@@ -1145,7 +1145,7 @@ a:hover::before {
     }
 
     .project img {
-        height: 185px;
+        height: 100%;
     }
 
     .project-inside {
