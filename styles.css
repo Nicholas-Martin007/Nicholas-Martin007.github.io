@@ -184,12 +184,12 @@ u {
 
 .about strong {
     display: inline-block;
-    width: 180px;
+    width: 300px;
     max-width: 100%;
 }
 
 .about li {
-    display: flex;
+    display: block;
     font-size: 28px;
 }
 
@@ -848,7 +848,7 @@ a:hover::before {
     }
 
     .about strong{
-        width: 110px;
+        width: 200px;
     }
     .about li {
         display: block;
@@ -1170,7 +1170,7 @@ a:hover::before {
     }
 
     .about strong {
-        width: 65px;
+        width: 100px;
     }
     .container img {
         width: 40px;
